@@ -1,88 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Renz Bryan Tingson</title>
+    <meta charset="UTF-8">
 
-  <meta name="description" content="Get in touch with Renz Bryan Tingson via the contact form or email below.">
-  <link rel="canonical" href="https://YOUR-DOMAIN.com/contact.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Contact | Renz Bryan Tingson">
-  <meta property="og:description" content="Reach out to Renz Bryan Tingson through this contact page.">
-  <meta property="og:image" content="https://YOUR-DOMAIN.com/assets/hero-md.jpg">
-  <meta property="og:url" content="https://YOUR-DOMAIN.com/contact.html">
+    <title>Michelle Mahinay | Contact</title>
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
+    <meta
+        name="description"
+        content="Contact Michelle Mahinay through the HTML5 validated contact form."
+    >
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+    <!-- Canonical URL -->
+    <link
+        rel="canonical"
+        href="https://mahinay123.github.io/about-me/contact.html"
+    >
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:title"
+        content="Michelle Mahinay | Contact"
+    >
+
+    <meta
+        property="og:description"
+        content="Contact Michelle Mahinay through the HTML5 validated contact form."
+    >
+
+    <meta
+        property="og:image"
+        content="https://mahinay123.github.io/about-me/assets/hero-md.jpg"
+    >
+
+    <meta
+        property="og:url"
+        content="https://mahinay123.github.io/about-me/contact.html"
+    >
+
+    <!-- Twitter Card -->
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Michelle Mahinay | Contact"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Contact Michelle Mahinay through the HTML5 validated contact form."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://mahinay123.github.io/about-me/assets/hero-md.jpg"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .page-title h1 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            color: #6b7280;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-card > p {
+            margin-bottom: 25px;
+            color: #4b5563;
+        }
+
+        .email {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #111827;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d1d5db;
+            border-radius: 9px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 2px solid #2563eb;
+            border-color: #2563eb;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            border: none;
+            background: #2563eb;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .contact-card {
+                padding: 25px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <a href="index.html" class="logo">Renz Bryan Tingson</a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="current">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <address>
-      Email: <a href="mailto:tingson.rb@gmail.com">tingson.rb@gmail.com</a>
-    </address>
+<header>
+    <div class="header-container">
 
-    <section>
-      <form action="#" method="POST">
-        <fieldset>
-          <legend>Contact me</legend>
-          <p>
-            <label for="name">Full name</label><br>
-            <input type="text" id="name" name="name" required minlength="2">
-          </p>
-          <p>
-            <label for="email">Email address</label><br>
-            <input type="email" id="email" name="email" required>
-          </p>
-          <p>
-            <label for="phone">Phone (optional)</label><br>
-            <input type="tel" id="phone" name="phone" pattern="[0-9\-\s]{7,}">
-          </p>
-          <p>
-            <label for="heard">How did you hear about me?</label><br>
-            <select id="heard" name="heard">
-              <option value="">-- Select one --</option>
-              <option value="school">School / Classmate</option>
-              <option value="social">Social Media</option>
-              <option value="search">Search Engine</option>
-              <option value="other">Other</option>
-            </select>
-          </p>
-          <p>
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </p>
-          <p>
-            <input type="checkbox" id="consent" name="consent" required>
-            <label for="consent">I agree to be contacted</label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </fieldset>
-      </form>
+        <div class="logo">
+            Michelle Mahinay
+        </div>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="page-title">
+
+        <h1>Contact Me</h1>
+
+        <p>
+            Feel free to send me a message.
+        </p>
+
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2026 Renz Bryan Tingson</p>
-  </footer>
+    <section class="contact-card">
+
+        <p>
+            If you would like to get in touch with me,
+            you can use the form below.
+        </p>
+
+        <a
+            class="email"
+            href="mailto:michellemahinay942@gmail.com"
+        >
+            michellemahinay942@gmail.com
+        </a>
+
+        <form action="#" method="post">
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    minlength="2"
+                    autocomplete="name"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number (Optional)
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9\-\s]{7,}"
+                    autocomplete="tel"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                ></textarea>
+
+            </div>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        &copy; 2026 Michelle Mahinay. All rights reserved.
+    </p>
+</footer>
+
 </body>
 </html>

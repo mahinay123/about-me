@@ -1,79 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Renz Bryan Tingson</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Home page of Renz Bryan Tingson — BS Information Systems student sharing projects and contact info.">
-  <link rel="canonical" href="https://tingson-rb.github.io/about-me">
+    <meta charset="UTF-8">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Home | Renz Bryan Tingson">
-  <meta property="og:description" content="Home page of Renz Bryan Tingson — IS student portfolio and contact info.">
-  <meta property="og:image" content="https://tingson-rb.github.io/about-me/assets/hero-md.jpg">
-  <meta property="og:url" content="https://tingson-rb.github.io/about-me/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
+    <title>Michelle Mahinay | Home</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta
+        name="description"
+        content="Welcome to Michelle Mahinay's personal website. Learn more about her interests, goals, and work."
+    >
+
+    <!-- Canonical URL -->
+    <link
+        rel="canonical"
+        href="https://mahinay123.github.io/about-me/"
+    >
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:title"
+        content="Michelle Mahinay | Home"
+    >
+
+    <meta
+        property="og:description"
+        content="Welcome to Michelle Mahinay's personal website. Learn more about her interests, goals, and work."
+    >
+
+    <meta
+        property="og:image"
+        content="https://mahinay123.github.io/about-me/assets/hero-md.jpg"
+    >
+
+    <meta
+        property="og:url"
+        content="https://mahinay123.github.io/about-me/"
+    >
+
+    <!-- Twitter Card -->
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Michelle Mahinay | Home"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Welcome to Michelle Mahinay's personal website. Learn more about her interests, goals, and work."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://mahinay123.github.io/about-me/assets/hero-md.jpg"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 13px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .card p {
+            color: #6b7280;
+        }
+
+        footer {
+            margin-top: 60px;
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <a href="index.html" class="logo">Renz Bryan Tingson</a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="current">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <article>
-      <h2>Welcome</h2>
-      <div class="card">
-        <p>Hi, I'm Renz Bryan Tingson, a BS Information Systems student. This is my "About Me" site built for Module 2 — a semantic, SEO-ready, three-page HTML5 site.</p>
-      </div>
-    </article>
+<header>
+    <div class="header-container">
 
-    <picture>
-      <source type="image/webp"
-              srcset="assets/hero-sm.webp 400w,
-                      assets/hero-md.webp 800w,
-                      assets/hero-lg.webp 1600w"
-              sizes="(max-width: 600px) 90vw, 800px">
-      <img src="assets/hero-md.jpg"
-           alt="Laptop on a wooden desk showing code in a text editor, with a coffee mug and notebook nearby"
-           width="800" height="450"
-           loading="lazy">
-    </picture>
+        <div class="logo">
+            Michelle Mahinay
+        </div>
 
-    <figure>
-      <img src="assets/avatar.jpg" alt="Illustrated avatar of Renz Bryan Tingson, a student wearing a hoodie and backpack" width="200" height="200" loading="lazy">
-      <figcaption>Renz Bryan Tingson — BS Information Systems</figcaption>
-    </figure>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="card-project"><h3>Project 1</h3><p>Short description.</p></article>
-        <article class="card-project"><h3>Project 2</h3><p>Short description.</p></article>
-        <article class="card-project"><h3>Project 3</h3><p>Short description.</p></article>
-        <article class="card-project"><h3>Project 4</h3><p>Short description.</p></article>
-        <article class="card-project"><h3>Project 5</h3><p>Short description.</p></article>
-        <article class="card-project"><h3>Project 6</h3><p>Short description.</p></article>
-      </div>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <h1>Welcome to My Website</h1>
+
+        <p>
+            Hello! I'm Michelle Mahinay. This website introduces
+            who I am, my interests, and my goals.
+        </p>
+
+        <picture>
+
+            <source
+                type="image/webp"
+                srcset="
+                    assets/hero-sm.webp 400w,
+                    assets/hero-md.webp 800w,
+                    assets/hero-lg.webp 1600w
+                "
+                sizes="(max-width: 600px) 100vw, 100vw"
+            >
+
+            <img
+                class="hero-image"
+                src="assets/hero-md.jpg"
+                alt="Scenic landscape representing exploration and personal growth"
+                width="1600"
+                height="900"
+                loading="lazy"
+            >
+
+        </picture>
+
+        <a class="button" href="about.html">
+            Learn More About Me
+        </a>
+
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2026 Renz Bryan Tingson</p>
-  </footer>
+    <section class="cards">
+
+        <article class="card">
+            <h2>About Me</h2>
+
+            <p>
+                Discover more about my background, interests,
+                and personal goals.
+            </p>
+        </article>
+
+        <article class="card">
+            <h2>My Interests</h2>
+
+            <p>
+                I enjoy learning new skills, exploring technology,
+                and working on creative projects.
+            </p>
+        </article>
+
+        <article class="card">
+            <h2>Get in Touch</h2>
+
+            <p>
+                Have a question or want to contact me?
+                Visit my contact page.
+            </p>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        &copy; 2026 Michelle Mahinay. All rights reserved.
+    </p>
+</footer>
+
 </body>
 </html>
